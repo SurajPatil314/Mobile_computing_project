@@ -29,6 +29,7 @@ public class new_game_creation_page extends AppCompatActivity implements Locatio
     Double longitudedata;
     Double latitudedata;
     LocationManager locationManager;
+    Integer questionnumber =0;
 
 
 
@@ -60,7 +61,15 @@ public class new_game_creation_page extends AppCompatActivity implements Locatio
     }
 
     public void submitquestonbuttoactin(View view) {
+        questionnumber++;
+        System.out.println("questionnumber"+questionnumber);
+        createnewquestion();
 
+
+    }
+
+    void createnewquestion()
+    {
         double datalongitude= longitudedata;
         double datalatitude= latitudedata;
         // Log.i("username::",usernamess);
@@ -81,8 +90,8 @@ public class new_game_creation_page extends AppCompatActivity implements Locatio
             Toast.makeText(new_game_creation_page.this, "Successfully saved your question", Toast.LENGTH_LONG).show();
             // dataref.push().setValue(newuser1);
         }
-
     }
+
     void getLocation() {
         try {
             locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);

@@ -9,6 +9,16 @@ public class questions {
     String creator;
     String ownerID;
 
+    public Integer getQno() {
+        return qno;
+    }
+
+    public void setQno(Integer qno) {
+        this.qno = qno;
+    }
+
+    Integer qno;
+
     public String getOwnerID() {
         return ownerID;
     }
