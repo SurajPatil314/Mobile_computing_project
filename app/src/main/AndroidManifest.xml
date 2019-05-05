@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".searched_game_page"></activity>
-        <activity android:name=".new_game_creation_page" />
-        <activity android:name=".create_join_game" />
-        <activity android:name=".RegisterUsers" />
+        <activity android:name=".new_game_creation_page"/>
+        <activity android:name=".create_join_game"/>
+        <activity android:name=".RegisterUsers"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

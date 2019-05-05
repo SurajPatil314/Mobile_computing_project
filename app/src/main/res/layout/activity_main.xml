@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="20dp"
     tools:context=".MainActivity" >
 
     <LinearLayout
@@ -22,13 +24,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Email" />
+            android:text="Email"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
 
         <EditText
             android:id="@+id/emailS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#ffffff"
             android:ems="10"
             android:inputType="textPersonName" />
     </LinearLayout>
@@ -43,6 +49,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
             android:text="Password" />
 
         <EditText
@@ -50,6 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="#ffffff"
             android:ems="10"
             android:inputType="textPassword" />
     </LinearLayout>
@@ -58,13 +68,18 @@
         android:id="@+id/signinS"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign in"
-        android:onClick="signinS"/>
+        android:text="Sign In"
+        android:onClick="signinS"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/trans_button" />
 
     <Button
         android:id="@+id/registerR"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Not registered? Register"
-        android:onClick="registerS"/>
+        android:onClick="registerS"
+        android:background="@drawable/trans_button"/>
 </LinearLayout>
